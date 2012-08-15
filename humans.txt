@@ -1,0 +1,21 @@
+                            
+/* TEAM */
+      
+	System engineer: Nicolás Mauricio García Garzón      
+	Site: nicolas2324.wordpress.com
+	Twitter: @nicolas2324
+	Location: Bogotá, Colombia			
+
+							
+/* THANKS */
+		
+	Name: Lina Paola Tabares Parada
+        Name: Alejandro Daza
+                      
+/* SITE */
+                            
+	Last update: 2012/08/15 
+	Language: Español
+	Standards: HTML5, CSS3
+	Components: Modernizr, jQuery
+	IDE: Ninja IDE
