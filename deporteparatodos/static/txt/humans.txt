@@ -4,19 +4,13 @@
 	System engineer: Nicolás Mauricio García Garzón      
 	Site: nicolas2324.wordpress.com
 	Twitter: @nicolas2324
-	Location: Bogotá, Colombia			
-	
-	System engineer: Luis Felipe Gonzalez Moreno
-	Twitter: @razielblood
-	Location: Bogotá, Colombia
-
-	System engineer: Johann Joseph Guayacundo Avellaneda
 	Location: Bogotá, Colombia
 							
 /* THANKS */
 		
 	Name: Lina Paola Tabares Parada
         Name: Alejandro Daza
+	Name: Oscar Javier Ardila Peña
                       
 /* SITE */
                             
