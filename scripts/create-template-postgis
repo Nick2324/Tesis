@@ -10,12 +10,12 @@ then
     GEOGRAPHY=1
 fi
 
-createdb -E UTF8 template_postgis -U postgres && \
-( createlang -d template_postgis -l -U postgres | grep plpgsql || createlang -d template_postgis plpgsql -U postgres) && \
-psql -d postgres -c "UPDATE pg_database SET datistemplate='true' WHERE datname='template_postgis';" -U postgres && \
-psql -d template_postgis -f $POSTGIS_SQL_PATH/$POSTGIS_SQL -U postgres && \
-psql -d template_postgis -f $POSTGIS_SQL_PATH/spatial_ref_sys.sql -U postgres && \
-psql -d template_postgis -c "GRANT ALL ON geometry_columns TO PUBLIC;" -U postgres && \
+createdb -E UTF8 template_postgis -U postgres
+( createlang -d template_postgis -l -U postgres | grep plpgsql || createlang -d template_postgis plpgsql -U postgres)
+psql -d postgres -c "UPDATE pg_database SET datistemplate='true' WHERE datname='template_postgis';" -U postgres
+psql -d template_postgis -f $POSTGIS_SQL_PATH/$POSTGIS_SQL -U postgres
+psql -d template_postgis -f $POSTGIS_SQL_PATH/spatial_ref_sys.sql -U postgres
+psql -d template_postgis -c "GRANT ALL ON geometry_columns TO PUBLIC;" -U postgres
 psql -d template_postgis -c "GRANT ALL ON spatial_ref_sys TO PUBLIC;" -U postgres
 
 if [ $GEOGRAPHY -eq 1 ]
